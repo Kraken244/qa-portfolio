@@ -5,8 +5,8 @@ import type { ContactLink, NavItem, Profile } from '../types/content'
  * Замените заглушки на свои значения — компоненты менять не нужно.
  */
 export const profile: Profile = {
-  name: 'Имя Фамилия',
-  shortName: 'ИФ',
+  name: 'Артем Полуэктов',
+  shortName: 'АП',
   role: 'Junior QA Engineer',
   focus: 'Python · Manual QA · Automation',
   headline: 'Нахожу проблемы раньше, чем их заметит пользователь.',
@@ -16,13 +16,13 @@ export const profile: Profile = {
   email: 'hello@example.com',
   github: {
     label: 'GitHub',
-    href: 'https://github.com/username',
-    handle: '@username',
+    href: 'https://github.com/Kraken244',
+    handle: '@Kraken244',
   },
   telegram: {
     label: 'Telegram',
-    href: 'https://t.me/username',
-    handle: '@username',
+    href: 'https://t.me/Prostoartemivse',
+    handle: '@Prostoartemivse',
   },
 }
 
