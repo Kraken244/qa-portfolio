@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# После публикации добавьте строку с абсолютным адресом карты сайта:
+# Sitemap: https://your-domain.example/sitemap.xml

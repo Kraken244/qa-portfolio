@@ -1,0 +1,128 @@
+.footer {
+  position: relative;
+  padding-top: clamp(64px, 8vw, 96px);
+  border-top: 1px solid rgba(255, 255, 255, 0.065);
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.018));
+}
+
+.top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(150px, 0.5fr) auto;
+  gap: 48px;
+  padding-bottom: 64px;
+}
+
+.brandBlock {
+  max-width: 420px;
+}
+
+.brand {
+  display: inline-block;
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+}
+
+.slash {
+  color: var(--color-accent);
+}
+
+.tagline {
+  margin-top: 16px;
+  color: var(--color-text-tertiary);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.nav {
+  display: grid;
+  gap: 10px;
+}
+
+.nav a {
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  transition: color 180ms var(--ease-out);
+}
+
+.nav a:hover {
+  color: var(--color-text);
+}
+
+.socials {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  transition: color 180ms var(--ease-out);
+}
+
+.socials a:hover {
+  color: var(--color-accent);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 0 26px;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-tertiary);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.03em;
+}
+
+.stack {
+  color: var(--color-text-tertiary);
+}
+
+.toTop {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--color-text-secondary);
+  transition: color 180ms var(--ease-out);
+}
+
+.toTop:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 760px) {
+  .top {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  .brandBlock {
+    grid-column: 1 / -1;
+  }
+
+  .bottom {
+    flex-wrap: wrap;
+    gap: 8px 24px;
+  }
+
+  .stack {
+    order: 3;
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .top {
+    grid-template-columns: 1fr;
+  }
+}

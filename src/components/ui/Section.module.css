@@ -1,0 +1,8 @@
+.section {
+  position: relative;
+  padding-block: var(--section-space);
+}
+
+.section + .section {
+  border-top: 1px solid rgba(255, 255, 255, 0.045);
+}
